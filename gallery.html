@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Галерея изображений</title>
+    <link rel="stylesheet" href="gallery.css">
+</head>
+<body>
+    <div class="gallery">
+        <h1>Галерея изображений</h1>
+        <div class="thumbnails">
+            <img src="https://papercutz.com/wp-content/uploads/2024/03/Winx-Club-Vol-2-Cover-476x659-1.jpg" alt="Image 1" class="thumbnail" onclick="showImage(this.src)">
+            <img src="https://static.wikia.nocookie.net/poohadventures/images/f/f3/Bloom_S1.png/revision/latest?cb=20180428230006" alt="Image 2" class="thumbnail" onclick="showImage(this.src)">
+            <img src="https://static.wikia.nocookie.net/winx/images/9/9b/Musa-01.png/revision/latest/scale-to-width-down/250?cb=20150620080654" alt="Image 3" class="thumbnail" onclick="showImage(this.src)">
+            <img src="https://static.wikia.nocookie.net/p__/images/2/25/Stella_%28Winx_Club%29.png/revision/latest/scale-to-width/360?cb=20171208213644&path-prefix=protagonist" alt="Image 4" class="thumbnail" onclick="showImage(this.src)">
+            <img src="https://static.wikia.nocookie.net/poohadventures/images/6/69/Flora_S1.png/revision/latest?cb=20180428230040" alt="Image 4" class="thumbnail" onclick="showImage(this.src)">
+            <img src="https://static.wikia.nocookie.net/winx/images/6/6d/Tecna_season_1_civilian.png/revision/latest/scale-to-width-down/172?cb=20210807211335" alt="Image 4" class="thumbnail" onclick="showImage(this.src)">
+        </div>
+        <div class="modal" id="modal">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Large Image">
+        </div>
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+</html>
